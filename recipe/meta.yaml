@@ -10,7 +10,7 @@ source:
   sha256: 9be182b4f16a9dae1d7fba05e9166b4719304ca1bdc571e0051ef81c25e1ae8f
 
 build:
-  number: 0
+  number: 0 # trigger
   noarch: python
   script: pip install . --no-deps --no-build-isolation -vv
   entry_points:
