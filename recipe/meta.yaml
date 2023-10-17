@@ -1,5 +1,5 @@
 {% set name = "percy" %}
-{% set version = "0.0.6" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/anaconda-distribution/percy/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 052d86f40a38eca2d9f744f10f1ac2070702615070fffa7480ab3b702f75f788
+  sha256: 8c204c599a07ebd94e3bdd9e9ba24f26f7b372ca8ec5eadcd9a798ac153365db
 
 build:
   number: 0
