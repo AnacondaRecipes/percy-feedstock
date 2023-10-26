@@ -1,5 +1,5 @@
 {% set name = "percy" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/anaconda-distribution/percy/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 8c204c599a07ebd94e3bdd9e9ba24f26f7b372ca8ec5eadcd9a798ac153365db
+  sha256: 605f32c789328546527fcc7c70d523acea67c729c1dac8b1077141aa9223ba53
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - wheel
   run:
     - python >=3.8
-    - click
+    - click >=8.1.6
     - conda
     - jinja2
     - pyyaml
