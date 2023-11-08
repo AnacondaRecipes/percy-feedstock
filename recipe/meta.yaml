@@ -1,5 +1,5 @@
 {% set name = "percy" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/anaconda-distribution/percy/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 605f32c789328546527fcc7c70d523acea67c729c1dac8b1077141aa9223ba53
+  sha256: 5d2e06908acfb0835ddeb9b8cb13dc0b61e12c49e0cb95cb94e82bf794993e51
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - wheel
   run:
     - python >=3.8
-    - click >=8.1.6
+    - click >=8.1.7
     - conda
     - jinja2
     - pyyaml
@@ -43,8 +43,8 @@ test:
 
 about:
   home: https://github.com/anaconda-distribution/percy
-  license: MIT
-  license_family: MIT
+  license: BSD-3-Clause
+  license_family: BSD
   license_file: LICENSE
   summary: Helper tool for recipes on aggregate.
   description: |
