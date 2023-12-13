@@ -10,7 +10,7 @@ source:
   sha256: f2d6d906095d52a79d9c47b3b6699fc7f66e36629f449518175128765871287c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: pip install . --no-deps --no-build-isolation -vv
   entry_points:
@@ -40,6 +40,7 @@ test:
     - pip
   commands:
     - pip check
+    - python -m pytest -n auto --capture=no percy/tests/
 
 about:
   home: https://github.com/anaconda-distribution/percy
