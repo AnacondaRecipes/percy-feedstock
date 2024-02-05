@@ -43,7 +43,7 @@ test:
   commands:
     - pip check
     - python -m pytest -n auto percy/tests/
-    - echo "TODO rm: get explicit error code: $?"
+    - echo TODO rm get explicit error code $?
 
 about:
   home: https://github.com/anaconda-distribution/percy
