@@ -1,5 +1,5 @@
 {% set name = "percy" %}
-{% set version = "0.1.7" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/anaconda-distribution/percy/archive/refs/tags/{{ version }}.tar.gz
-  sha256: fa84c24648d99800301f3ce7c4ce6da886b6e6e77f3c175efecbc3588356cba2
+  sha256: bea0be3e51c0902f6bea180379b26b4bc388c4477f3a3c39f8f6f514cef2903e
 
 build:
   number: 0
@@ -30,6 +30,10 @@ requirements:
     - pyyaml
     - requests
     - jsonschema
+    - ruamel.yaml
+    - ruamel.yaml.jinja2
+    - conda-recipe-manager
+    - conda-build
 
 test:
   imports:
