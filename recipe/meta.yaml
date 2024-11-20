@@ -10,7 +10,7 @@ source:
   sha256: bea0be3e51c0902f6bea180379b26b4bc388c4477f3a3c39f8f6f514cef2903e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: pip install . --no-deps --no-build-isolation -vv
   entry_points:
@@ -34,6 +34,7 @@ requirements:
     - ruamel.yaml.jinja2
     - conda-recipe-manager
     - conda-build
+    - grayskull
 
 test:
   imports:
