@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/anaconda/percy.git
-  git_tag: cli-{{ version }}
+  url: https://github.com/anaconda-distribution/percy/archive/refs/tags/cli-{{ version }}.tar.gz
+  sha256: f18beac68c269b36edd4d23b09642633c02ef8aa89f3275c6c59ed0c8213b162
 
 build:
   number: 1
